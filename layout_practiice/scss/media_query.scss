@@ -1,0 +1,33 @@
+@import "reset";
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+   
+}
+
+@media screen and(max-width:800px){
+    div{
+        background-color: yellow;
+    } 
+    
+}
+
+@media screen and(max-width:600px){
+    div{
+        background-color: red;
+    } 
+    
+}
+
+@media screen and(max-width:400px){
+    div{
+        background-color: blue;
+    } 
+    
+}
+
+// 取最大寬度的話要從最大寫到最小。如果400px寫在800px前，在300px時，400符合、800也符合，但800寫在後面，所以它會蓋掉400

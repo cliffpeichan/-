@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  div {
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 600px) {
+  div {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 400px) {
+  div {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=media_query.css.map */
